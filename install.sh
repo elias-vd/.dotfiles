@@ -3,7 +3,7 @@
 sudo apt install curl vim
 
 #install nix
-sh <(curl -L https://nixos.org/nix/install) --daemon
+curl -L https://nixos.org/nix/install
 
 
 # install nix plugins
@@ -30,5 +30,8 @@ sudo chsh -s $(which zsh) $USER
 
 # bundle zsh plugins
 antibody bundle < ~/.zsh_plugins.txt >~/.zsh_plugins.sh
+
+echo '\n'
+echo "Please restart yor computer"
 
 
